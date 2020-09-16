@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-* main - 
-* description:
-* Return: 
+* main - void
+* description: prints a string
+* Return: 0
 **/
 int main(void)
 {
