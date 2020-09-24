@@ -3,7 +3,7 @@
 * _isdigit- entry point
 * @c: an int
 * description: checks if a digit is between 0 and 9
-* Return: null
+* Return: 1 or 0
 **/
 int _isdigit(int c)
 {
