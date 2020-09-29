@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-*
-*
-*
-*
+*_puts- entry point
+*description: prints a string
+*@str: a string
+*Return: null
 **/
 void _puts(char *str)
 {
