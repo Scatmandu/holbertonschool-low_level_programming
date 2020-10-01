@@ -4,7 +4,7 @@
 *description: compares the lengths of two strings
 *@s1: a string
 *@s2: a string
-*Return: -15, 15, or 0
+*Return: negative int, positive int, or 0
 **/
 int _strcmp(char *s1, char *s2)
 {
@@ -18,11 +18,11 @@ int _strcmp(char *s1, char *s2)
 	}
 	if (i < j)
 	{
-		return (-15);
+		return (*s1 - *s2);
 	}
 	else if (j < i)
 	{
-		return (15);
+		return (*s1 - *s2);
 	}
 	else
 	{
