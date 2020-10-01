@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
-*
-*
-*
-*
-*
+*_strcat- entry point
+*description: concatenates two strings
+*@dest: string to copy to
+*@src: string to be copied
+*Return: dest
 **/
 char *_strcat(char *dest, char *src)
 {
