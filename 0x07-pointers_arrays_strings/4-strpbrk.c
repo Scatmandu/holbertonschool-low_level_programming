@@ -1,10 +1,9 @@
 #include "holberton.h"
 /**
-*
-*
-*
-*
-*
+*_strpbrk- entry point
+*@s: string to compare to
+*@accept: string containing values to compare to s
+*Return: matching string or null
 **/
 char *_strpbrk(char *s, char *accept)
 {
