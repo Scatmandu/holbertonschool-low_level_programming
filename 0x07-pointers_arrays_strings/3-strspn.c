@@ -18,6 +18,10 @@ unsigned int _strspn(char *s, char *accept)
 				k++;
 				i++;
 			}
+			else if (s[i] == '\0' && accept[j] == '\0')
+			{
+				return (0);
+			}
 		}
 	}
 return (k);
