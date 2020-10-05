@@ -1,24 +1,13 @@
-#include "holberton.h"
-/**
-*rev_string- entry point
-*description: reverses a string
-*@s: string of chars
-*Return: null
-**/
-void rev_string(char *s)
-{
-	int n;
-	int i;
-	int j;
-	char swap;
+#include <unistd.h>
 
-	for (; s[n] != '\0'; n++)
-	{
-	}
-	for (i = 0, j = n - 1; i < j; i++, j--)
-	{
-		swap = s[i];
-		s[i] = s[j];
-		s[j] = swap;
-	}
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
