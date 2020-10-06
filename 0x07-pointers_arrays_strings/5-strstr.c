@@ -11,7 +11,7 @@ char *_strstr(char *haystack, char *needle)
 
 	if (needle[0] == '\0')
 	{
-		return ('\0');
+		return (0);
 	}
 	for (i = 0; haystack[i] != '\0'; i++)
 	{
@@ -21,5 +21,5 @@ char *_strstr(char *haystack, char *needle)
 		}
 
 	}
-return ('\0');
+return (0);
 }
