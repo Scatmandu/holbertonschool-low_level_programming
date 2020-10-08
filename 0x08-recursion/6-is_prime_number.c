@@ -19,6 +19,7 @@ int prime(int x, int n)
 	{
 		return (prime(x - 1, n));
 	}
+}
 /**
 *is_prime_number- finds if a number is prime
 *@n: number to test primeness of
