@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	{
 	}
 
-	new = malloc(1 + (sizeof(char) * i));
+	new = malloc((sizeof(char) * i) + 1);
 
 	if (new == NULL)
 	{
@@ -28,5 +28,4 @@ char *_strdup(char *str)
 	}
 new[i] = '\0';
 return (new);
-free(new);
 }
