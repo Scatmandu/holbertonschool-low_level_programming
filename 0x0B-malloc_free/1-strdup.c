@@ -9,13 +9,22 @@ char *_strdup(char *str)
 	unsigned int i;
 	char *new;
 
-	for (i = 0; str[i] != '\0'; i++)
-
-	new = malloc(sizeof(char) * i);
-
-	for (i = 0; str[i] != '\0'; i++)
+	if (str[0] == '\0')
 	{
-		new[i] = str[i];
+		return ('\0');
+	}
+	else
+	{
+		for (i = 0; str[i] != '\0'; i++)
+
+		new = malloc(sizeof(char) * i);
+
+		for (i = 0; str[i] != '\0'; i++)
+		{
+			new[i] = str[i];
+		}
+	new[i + 1] = '\0';
 	}
 return (new);
+free (new);
 }
