@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-*
-*
-*
-*
+*alloc_grid- prints a 2d array then changes its values
+*@width: width of array
+*@height: height of array
+*Return: Null or arr
 **/
 int **alloc_grid(int width, int height)
 {
