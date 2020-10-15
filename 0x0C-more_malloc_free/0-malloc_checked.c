@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
 *malloc_checked- checks to see if malloc succeeds
 *@b: size of a malloc call
@@ -15,6 +16,6 @@ void *malloc_checked(unsigned int b)
 	}
 	else
 	{
-		exit (98);
+		exit(98);
 	}
 }
