@@ -1,8 +1,7 @@
 #include "holberton.h"
 /**
-*
-*
-*
+*main- prints name of file used to compile
+*Return: 0
 **/
 int main(void)
 {
