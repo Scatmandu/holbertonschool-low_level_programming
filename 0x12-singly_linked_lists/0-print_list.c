@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
-*
-*
-*
+*print_list- prints elements in from a linked list
+*@h: pointer to head of list
+*Return: number of nodes
 **/
 size_t print_list(const list_t *h)
 {
