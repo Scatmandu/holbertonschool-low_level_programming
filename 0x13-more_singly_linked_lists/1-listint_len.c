@@ -6,9 +6,9 @@
 **/
 size_t listint_len(const listint_t *h)
 {
-	int i;
+	int i = 0; 
 
-	while (h)
+	while (h != '\0')
 	{
 		h = h->next;
 		i++;
