@@ -34,12 +34,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	new_list->key = strdup(key);
 	new_list->value = strdup(value);
-	if (current == NULL)
-	{
-		new_list->next = NULL;
-		current = new_list;
-		return (1);
-	}
 	new_list->next = current;
 	current = new_list;
 	return (1);
