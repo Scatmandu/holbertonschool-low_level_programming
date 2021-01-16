@@ -33,15 +33,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (new_list == NULL)
 		return (0);
 	new_list->key = strdup(key);
-	if (new_list->key == NULL)
-		free(new_list);
 	new_list->value = strdup(value);
-	if (new_list->value == NULL)
+	if (ht->array[index] == NULL)
 	{
-		free(new_list);
-		free(new_list->key);
+		new_list->next = NULL;
+		ht->array[index] = new_list;
+		return (1);
 	}
-	new_list->next = current;
-	current = new_list;
+	new_list->next = ht->array[index];
+	ht->array[index] = new_list;
 	return (1);
 }
