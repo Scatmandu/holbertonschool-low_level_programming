@@ -41,7 +41,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(new_list);
 		free(new_list->key);
 	}
-	new_list->next = ht->array[index];
-	ht->array[index] = new_list;
+	new_list->next = current;
+	current = new_list;
 	return (1);
 }
