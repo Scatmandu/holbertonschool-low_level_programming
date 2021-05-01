@@ -1,0 +1,9 @@
+
+output: main.o holberton.o
+	g++ main.o holberton.o -o holberton
+
+main.o: main.c
+	g++ -c main.c
+
+holberton.o: holberton.c m.h
+	g++ -c holberton.c
