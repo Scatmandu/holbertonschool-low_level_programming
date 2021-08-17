@@ -3,11 +3,12 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include "holberton.h"
-/*
+/**
 * read_textfile - reads a text file and prints to STDOUT
-*
-*
-*/
+* @filename: file to open/read
+* @letters: number of characters to read from file
+* Return: text read or 0
+**/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd, re, wr;
